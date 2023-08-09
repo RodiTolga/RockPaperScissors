@@ -28,20 +28,13 @@ scissors = '''
 '''
 
 game_images = [rock, paper, scissors]
-
 game_strings = ['Rock', 'Paper', 'Scissors']
-
-
-
 user_score = 0
 comp_score = 0
 game_state = True
 
-
-
 while game_state is True:
 
-  
     user_choice = int(input("Choose 0 for Rock, 1 for Paper and 2 for Scissors.\n"))
     print(game_images[user_choice])
 
@@ -49,7 +42,6 @@ while game_state is True:
     print(game_images[comp_choice])
 
     print(f"The computer chose: {game_strings[comp_choice]}")
-
 
     if user_choice > 2 or user_choice < 0:
         print("You typed an invalid number, you lose!")
@@ -77,8 +69,3 @@ while game_state is True:
         game_state = False
     else:
         print(f"Your score is {user_score}. The opponent's score is {comp_score}")
-
-    
-
-
-
